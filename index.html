@@ -5,12 +5,20 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Karanga Fresh - Karanga Halisi za Kitanzania</title>
   <link rel="stylesheet" href="style.css" />
+  <script defer src="script.js"></script>
 </head>
 <body>
-  <header>
+  <header class="navbar">
     <h1>Karanga Fresh</h1>
-    <p>Karanga safi, tamu na zenye afya - moja kwa moja kutoka shambani!</p>
+    <p>Karanga safi, tamu na zenye afya - moja kwa moja kutoka J & P Industry!</p>
   </header>
+
+  <section class="carousel">
+    <div class="slides">
+      <img src="karanga.jpeg" class="slide" alt="Karanga Kavu">
+      <img src="mayaikaranga.jpeg" class="slide" alt="Karanga za Mayai">
+    </div>
+  </section>
 
   <section class="products">
     <h2>Aina za Karanga</h2>
@@ -21,10 +29,12 @@
     </div>
     <div class="product">
       <img src="mayaikaranga.jpeg" alt="Karanga za Mayai">
-      <h3>Peanut Butter</h3>
+      <h3>Karanga za Mayai</h3>
       <p>Kuanzia Tsh 1,000</p>
     </div>
   </section>
+
+  
 
   <section class="contact">
     <h2>Weka Oda</h2>
@@ -39,13 +49,17 @@
         <option value="Kavu">Karanga Kavu</option>
         <option value="Peanut Butter">Peanut Butter</option>
       </select>
-  
+
       <textarea placeholder="Maelezo ya ziada (kama yapo)"></textarea>
-      <button type="submit"><a href="namba.html">Tuma Oda</button></a>
+      <button type="submit">Tuma Oda</button>
     </form>
   </section>
-  
-  
+
+  <section class="testimonials">
+    <h2>Mapendekezo</h2>
+    <blockquote>“Karanga zenu ni tamu na safi!” – Asha M.</blockquote>
+    <blockquote>“Ninapenda karanga za mayai, zinakumbusha utoto wangu!” – Hamisi J.</blockquote>
+  </section>
 
   <footer>
     <p>&copy; 2025 Karanga Fresh - Sisi ni ubora wa asili.</p>

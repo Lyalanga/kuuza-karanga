@@ -1,71 +1,98 @@
+/* style.css */
 body {
-    font-family: sans-serif;
-    margin: 0;
-    padding: 0;
-    background: #fffdf5;
-    color: #333;
-  }
-  
-  header {
-    background-color: #a0522d;
-    color: white;
-    text-align: center;
-    padding: 2rem;
-  }
-  
-  .products {
-    display: flex;
-    justify-content: space-around;
-    padding: 2rem;
-    background-color: #fdf3e7;
-  }
-  
-  .product {
-    text-align: center;
-    max-width: 200px;
-  }
-  
-  .product img {
-    width: 100%;
-    border-radius: 10px;
-  }
-  
-  .contact {
-    background: #fff7ec;
-    padding: 2rem;
-    text-align: center;
-  }
-  a {
-    text-decoration: none;
-  }
-  
-  form input, form textarea {
-    display: block;
-    width: 90%;
-    max-width: 400px;
-    margin: 10px auto;
-    padding: 10px;
-  }
-  
-  button {
-    background: #a0522d;
-    color: white;
-    padding: 10px 20px;
-    border: none;
-    cursor: pointer;
-  }
-  
-  footer {
-    background-color: #eee;
-    text-align: center;
-    padding: 1rem;
-  }
-  
-  .whatsapp {
-    display: inline-block;
-    margin-top: 10px;
-    text-decoration: none;
-    color: green;
-    font-weight: bold;
-  }
-  
+  font-family: 'Segoe UI', sans-serif;
+  margin: 0;
+  padding: 0;
+  background: #fefefe;
+  color: #333;
+}
+
+header.navbar {
+  background: #a0522d;
+  color: white;
+  padding: 1em;
+  text-align: center;
+}
+
+.products, .contact, .testimonials {
+  padding: 2em;
+  text-align: center;
+}
+
+.product img {
+  width: 100%;
+  max-width: 250px;
+  border-radius: 15px;
+}
+
+.product h3 {
+  margin: 0.5em 0;
+}
+
+form input, form select, form textarea, form button {
+  display: block;
+  margin: 1em auto;
+  width: 90%;
+  max-width: 400px;
+  padding: 0.8em;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+}
+
+form button {
+  background-color: #a0522d;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+form button:hover {
+  background-color: #7b3f1d;
+}
+
+footer {
+  background: #eee;
+  padding: 1em;
+  text-align: center;
+  font-size: 0.9em;
+}
+
+.whatsapp {
+  display: inline-block;
+  margin-top: 0.5em;
+  color: #25D366;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+/* Carousel Styles */
+.carousel {
+  overflow: hidden;
+  width: 100%;
+  max-height: 300px;
+}
+.slides {
+  display: flex;
+  width: 100%;
+  animation: slide 12s infinite;
+}
+.slide {
+  width: 400%;
+  object-fit: cover;
+}
+
+@keyframes slide {
+  0% { transform: translateX(0%); }
+  50% { transform: translateX(-100%); }
+  100% { transform: translateX(0%); }
+}
+
+.testimonials blockquote {
+  background: #fff5e1;
+  padding: 1em;
+  margin: 1em auto;
+  border-left: 5px solid #a0522d;
+  max-width: 600px;
+  font-style: italic;
+}
